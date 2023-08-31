@@ -15,6 +15,20 @@
     transition: .2s linear;
     text-transform: capitalize;
 }
+.content
+{
+    margin-top: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.logo{
+    color:#fff;
+    /* font-size: 20px; */
+}
 *::selection{
     background-color:var(--white);
     color:var(--black);
@@ -99,9 +113,10 @@ header.flex.navbar a:hover
 }
 
 #menu-btn{
+    margin-top: 20px;
     cursor:pointer;
     color: var(--white);
-    font-size: 2.5rem;
+    /* font-size: ; */
     display: none;
 }
 .home{
