@@ -413,7 +413,15 @@ section{
    z-index: 1000;
    /* padding-bottom: 9.5rem; */
 }
-
+/* Dark Theme */
+body.dark {
+   --light-color: #aaa;
+   --light-bg: #333;
+   --black: #fff;
+   --white: #222;
+   --border: 0.1rem solid rgba(255, 255, 255, 0.2);
+ }
+ 
 .footer span{
    color:var(--main-color);
 }
