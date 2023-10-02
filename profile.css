@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:orange;
+   --main-color:#00E77F;
    --red:#e74c3c;
-   --orange:#f39c12;
+   --orange:#00E77F;
    --light-color:#888;
    --light-bg:#eee;
    --black:#2c3e50;
@@ -216,7 +216,7 @@ section{
    align-items: center;
    justify-content: space-between;
    position: relative;
-   padding: 1.5rem 2rem;
+   padding: 1.5rem 2 rem;
 }
 
 .header .flex .logo{
