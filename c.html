@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Programming in C</title>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="index.html">Coding Fresher</a>
+            <form action="search.html" method="post" class="search_form">
+                <input type="text" name="search_box" placeholder="search corses" required maxlength="100">
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+
+            <div class="icons">
+                <div id="menue-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img src="images/pic-1.jpg" class="image" alt="">
+                <h3 class="name" id="usernameDis2"></h3>
+                <p class="role">student</p>
+                <a href="profile.html " class="btn">view profile</a>
+                <!-- <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register </a>
+                </div> -->
+            </div>
+
+        </section>
+    </header>
+    <div class="side-bar">
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic-1.jpg" alt="" class="image">
+            <h3 class="name" id="usernameDis1">JHIL</h3>
+            <p class="role">student</p>
+            <a href="profile.html " class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="profile.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+    <div class="materials">
+        <h1 class="heading"><span class="sub-heading" style="text-align: center;">chapters</span></h1>
+        <button type="submit"><a href="https://drive.google.com/file/d/1Qkk8Eujgi6x0V2Iw-UGqBTRCDPPHw7BH/view?usp=drive_link" class="ch1">chapter-1</a></button>
+        <a href="https://drive.google.com/file/d/1LU8_uOWJRo78_Z-IsQdPRBEn3iZ7-psd/view?usp=drive_link" class="ch2">chapter-2</a>
+        <a href="https://drive.google.com/file/d/17shp1U6iQrSr1vIkA0nLFV0EQOZJZucR/view?usp=drive_link" class="ch3">chapter-3</a><br>
+        <a href="https://drive.google.com/file/d/15UdWK_Ykzx4yXLcrm48guaJC8UbjJntC/view?usp=drive_link" class="ch4">chapter-4</a>
+        <a href="https://drive.google.com/file/d/1LIQnLfKIf9Tj674_YxN67mI-lqlXIc1b/view?usp=drive_link" class="ch5">chapter-5</a>
+        <button><a href="https://drive.google.com/file/d/1bN_JWWT5019ICbPTuQB8gfdWhnwjc6cw/view?usp=drive_link" class="ch6">chapter-6</a></button><br>
+        <a href="" class="ch7">chapter-7</a>
+        <a href="" class="ch8">chapter-8</a>
+        <a href="" class="ch9">chapter-9</a><br>
+        <a href="" class="ch10">chapter-10</a>
+        <a href="" class="ch11">chapter-11</a>
+        <a href="" class="ch12">chapter-12</a>
+        <!-- <a href="" class="ch13">chapter-13</a> -->
+    </div>
+    <footer class="footer">
+
+        &copy; copyright @ 2023 by <span>CODING FRESHERS</span> | all rights reserved!
+
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        var name = localStorage.getItem('name');
+        document.getElementById('usernameDis1').innerText = name;
+        document.getElementById('usernameDis2').innerText = name;
+     </script>
+</body>
+</html>
+<style>
+    .materials .sub-heading{
+        font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    }
+</style>
+<style>
+    .materials .ch1 .ch2 .ch3 .ch4{
+    font-size: 1.8rem;
+    color: var(--light-color);
+    }
+    .materials .ch4 .ch5 .ch6{
+    font-size: 1.8rem;
+    color: var(--light-color);
+    }
+    .ch1{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 1.8rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 6rem;
+    }
+    .ch2{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .ch3{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 155px;
+        margin-bottom: 100px;
+    }
+    .ch4{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch5{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch6{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch7{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch8{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch9{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch10{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch11{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch12{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .ch13{
+        background-color: var(--main-color);
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: .0rem 3rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+</style>
